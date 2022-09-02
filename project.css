@@ -20,6 +20,7 @@ body{
 #first{
         font-size: 40px;
         color: white;
+        margin: 0;
 }
 
 .box{
@@ -40,22 +41,29 @@ body{
     height: auto;
     border-radius: 16px;
     box-shadow: 10%;
+    margin-top: 20px;
+    align-items: center;
 
 }
 
 .line{
-    font-size: 20px;
+    font-size: 19px;
     color: grey;
-    margin: auto;
+    margin-top: -9px;
+    padding: 20px
+    margin : auto;
 
 
 }
 .line1
 {
+
     font-size: 20px;
     margin-right: 20px;
     padding:10px;
     color: rgba(255, 255, 255, 0.496)
+
+
 }
 
 button
@@ -69,6 +77,38 @@ button
     font-size: 15px;
 
 
+}
+
+
+@media (max-width :706px)
+{
+    .box{
+        grid-template-columns: repeat(1,1fr);
+       
+   
+    }
+
+    .box1
+    {
+        align-items: center;
+    }
+    .box2
+    {
+        align-items: center;
+    }
+    .box3
+    {
+        align-items: center;
+    }
+   
+   
+}
+
+@media ((min-width :707px) and (max-width:1000px))
+{
+    .box{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 
